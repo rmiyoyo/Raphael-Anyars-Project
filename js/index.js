@@ -26,3 +26,28 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
+
+function checkScreenWidth() {
+  var width = window.innerWidth;
+  if (width < 600) {
+    // apply styles for screens smaller than 600px
+    document.body.style.fontSize = "16px";
+  } else {
+    // apply styles for larger screens
+    document.body.style.fontSize = "18px";
+  }
+}
+
+// call the function on page load
+checkScreenWidth();
+
+// call the function on screen resize
+window.onresize = checkScreenWidth;
+
+if (window.matchMedia("(max-width: 600px)").matches) {
+  /* the viewport is less than 600 pixels wide */
+  document.body.style.fontSize = "16px";
+} else {
+  /* the viewport is at least 600 pixels wide */
+  document.body.style.fontSize = "18px";
+}
