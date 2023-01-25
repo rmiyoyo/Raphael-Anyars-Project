@@ -80,14 +80,20 @@ body {
 
 #second-section {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
 }
 
+
 #second-section .grid {
-    width: 33.33%;
+    width: 100%;
     padding: 20px;
     text-align: center;
 }
+
 
 #second-section .grid .icon {
     font-size: 50px;
@@ -111,7 +117,6 @@ body {
     margin: 0 auto;
 }
 
-/* Pricing section styles */
 #pricing {
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +133,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Footer styles */
 footer {
     background-color: #f2f2f2;
     padding: 20px;
