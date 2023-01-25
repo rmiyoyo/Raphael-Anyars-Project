@@ -16,9 +16,13 @@ body {
     width: 100%;
     z-index: 1;
 }
-#header .logo {
-    margin-right: auto;
-}
+.logo {width: 60vw};
+  
+    @media (max-width: 600px) {
+      body {
+          background-color: lightblue;
+      }
+  }
 #header #header-img {
     width: 150px;
 }
@@ -153,9 +157,4 @@ footer li {
 }
 footer p {
     margin-top: 20px;
-}
-@media (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
 }
