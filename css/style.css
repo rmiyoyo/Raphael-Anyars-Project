@@ -154,8 +154,8 @@ footer li {
 footer p {
     margin-top: 20px;
 }
-@media screen and (max-width: 600px) {
-    div.example {
-      display: none;
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
     }
-  }
+}
