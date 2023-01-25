@@ -108,6 +108,14 @@ body {
     flex-wrap: wrap;
 }
 .product {
+
+    @media (max-width: 800px) /* missing opening { */
+        .product {
+          max-width: 300px;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
     width: 30%;
     padding: 20px;
     text-align: center;
